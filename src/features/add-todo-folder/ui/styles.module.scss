@@ -1,0 +1,13 @@
+.addTodoFolder {
+  position: relative;
+  display: flex;
+  gap: 30px;
+
+  .error {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 10px;
+    color: red;
+  }
+}

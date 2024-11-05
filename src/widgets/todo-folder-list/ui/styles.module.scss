@@ -1,0 +1,23 @@
+.todoFolderList {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+
+  .todoFolderList__item:not(:last-child) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 90%;
+      background-color: #d8d7d7;
+    }
+  }
+}
+
+.noFolderLabel {
+  margin: 30px;
+  text-align: center;
+  opacity: 0.3;
+}

@@ -1,0 +1,15 @@
+.filtersWrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+
+  .filterButton {
+    flex: 1 1 auto;
+    border: 2px solid transparent;
+    border-radius: 2px;
+  }
+
+  .filterButton--active {
+    border-color: rgba($color: #858585, $alpha: 1);
+  }
+}

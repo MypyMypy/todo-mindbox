@@ -1,0 +1,43 @@
+$background-color: #ececec;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+
+.main {
+  padding: 50px;
+}
+
+.page {
+  position: relative;
+  padding: 50px;
+  background-color: $background-color;
+  box-shadow: 0 15px 15px 15px $box-shadow-color;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 98%;
+    height: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $background-color;
+    box-shadow: 0 2px 4px $box-shadow-color, inset 0 2px 4px $box-shadow-color; // Adjusted shadow
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 96%;
+    height: 20px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $background-color;
+    box-shadow: 0 1px 1px $box-shadow-color;
+  }
+}
