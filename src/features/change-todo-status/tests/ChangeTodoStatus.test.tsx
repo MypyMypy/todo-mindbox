@@ -3,7 +3,6 @@ import { ChangeTodoStatus } from "..";
 import { useAppContext } from "@/app/providers";
 import { TodoActions } from "@/shared/reducers/todo";
 
-// Мокаем контекст приложения
 jest.mock("@/app/providers", () => ({
   useAppContext: jest.fn(),
 }));
@@ -18,7 +17,7 @@ describe("ChangeTodoStatus", () => {
   });
 
   afterEach(() => {
-    jest.clearAllMocks(); // Сбрасываем моки после каждого теста
+    jest.clearAllMocks();
   });
 
   test("renders the button with default text", () => {

@@ -25,7 +25,7 @@ $box-shadow-color: rgba(0, 0, 0, 0.2);
     left: 50%;
     transform: translateX(-50%);
     background-color: $background-color;
-    box-shadow: 0 2px 4px $box-shadow-color, inset 0 2px 4px $box-shadow-color; // Adjusted shadow
+    box-shadow: 0 2px 4px $box-shadow-color, inset 0 2px 4px $box-shadow-color;
   }
 
   &::after {

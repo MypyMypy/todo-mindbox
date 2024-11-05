@@ -3,7 +3,6 @@ import { RemoveTodo } from "..";
 import { useAppContext } from "@/app/providers";
 import { TodoActions } from "@/shared/reducers/todo";
 
-// Мокаем контекст приложения
 jest.mock("@/app/providers", () => ({
   useAppContext: jest.fn(),
 }));

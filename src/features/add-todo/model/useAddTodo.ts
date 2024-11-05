@@ -52,7 +52,7 @@ export const useAddTodo = (folderName: string) => {
 
   useEffect(() => {
     return () => clearError();
-  }, []);
+  }, [clearError]);
 
   return {
     todoName,
